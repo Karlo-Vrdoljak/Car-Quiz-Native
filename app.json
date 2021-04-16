@@ -5,8 +5,23 @@
     "name": "quiz-app",
     "slug": "quiz-app",
     "version": "1.0.0",
+    "icon": "./assets/img/quiz.png",
+    "splash": {
+      "image": "./assets/img/quiz.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "ios": {
+      "supportsTablet": true
+    },
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "packagerOpts": {
+      "assetExts": ["db"]
+    }
   }
 }
