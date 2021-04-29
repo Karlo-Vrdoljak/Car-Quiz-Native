@@ -3,6 +3,7 @@ import * as SQLite from "expo-sqlite";
 import { SQLError } from "expo-sqlite";
 import { Asset } from "expo-asset";
 import EncriptService from "./security";
+import mongo from "./mongo";
 
 const db = SQLite.openDatabase("quiz.db");
 
@@ -111,9 +112,11 @@ const sqlProvider = {
   }
 };
 
+
 const DbContext = React.createContext({
   db: db,
   sqliteService: sqlProvider,
+  moDb: mongo
 });
 
 export const DbProvider = DbContext.Provider;

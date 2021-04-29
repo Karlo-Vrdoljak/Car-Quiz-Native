@@ -19,9 +19,6 @@
     },
     "assetBundlePatterns": [
       "**/*"
-    ],
-    "packagerOpts": {
-      "assetExts": ["db"]
-    }
+    ]
   }
 }
